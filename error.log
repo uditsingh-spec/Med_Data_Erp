@@ -1,0 +1,240 @@
+2026-06-22T18:39:29.324Z Error name: ZodError | Error message: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "Male",
+      "Female"
+    ],
+    "path": [
+      "gender"
+    ],
+    "message": "Invalid option: expected one of \"Male\"|\"Female\""
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+] | Stack: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "Male",
+      "Female"
+    ],
+    "path": [
+      "gender"
+    ],
+    "message": "Invalid option: expected one of \"Male\"|\"Female\""
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+]
+    at createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:29:38)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at multerMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\multer\lib\make-middleware.js:18:41)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:44:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-22T18:39:29.337Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:238:18)
+2026-06-22T18:39:29.350Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\sampleController.ts:28:20)
+2026-06-22T18:45:02.489Z Error name: ZodError | Error message: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "Male",
+      "Female"
+    ],
+    "path": [
+      "gender"
+    ],
+    "message": "Invalid option: expected one of \"Male\"|\"Female\""
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+] | Stack: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "Male",
+      "Female"
+    ],
+    "path": [
+      "gender"
+    ],
+    "message": "Invalid option: expected one of \"Male\"|\"Female\""
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+]
+    at createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:29:38)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at multerMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\multer\lib\make-middleware.js:18:41)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:44:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-22T18:45:02.496Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:238:18)
+2026-06-22T18:45:02.504Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\sampleController.ts:28:20)
+2026-06-22T18:46:14.693Z Error name: ZodError | Error message: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+]
+    at createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:29:38)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at multerMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\multer\lib\make-middleware.js:18:41)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:44:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-22T18:46:14.700Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:238:18)
+2026-06-22T18:46:14.708Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\sampleController.ts:28:20)
+2026-06-22T18:48:54.608Z Error name: ZodError | Error message: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "gestationalAge"
+    ],
+    "message": "Invalid input: expected string, received number"
+  }
+]
+    at createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:29:38)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at multerMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\multer\lib\make-middleware.js:18:41)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:44:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-22T18:48:54.614Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:238:18)
+2026-06-22T18:48:54.621Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\sampleController.ts:28:20)
