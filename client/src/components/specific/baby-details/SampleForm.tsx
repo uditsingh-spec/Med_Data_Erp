@@ -121,8 +121,10 @@ interface SampleFormProps {
   submitLabel?: string;
 }
 
-const ReadingGrid = ({ device, title, register, handleKeyDown }: any) => {
+const ReadingGrid = ({ device, title, register, watch, handleKeyDown, errors }: any) => {
   const fields = Array.from({ length: 10 }, (_, i) => i + 1);
+  const f_error = errors?.[`f1_${device}_f`]?.message;
+  const s_error = errors?.[`f1_${device}_s`]?.message;
   
   return (
     <div className="space-y-4 p-4 bg-slate-50 border border-slate-200 rounded-xl">
@@ -130,12 +132,15 @@ const ReadingGrid = ({ device, title, register, handleKeyDown }: any) => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Forehead Section */}
-        <div className="space-y-4">
+        <div className={`space-y-4 p-3 rounded-lg border ${f_error ? 'border-red-500' : 'border-transparent'}`}>
           <h4 className="font-semibold text-slate-700 border-b pb-2">Forehead</h4>
           <div className="grid grid-cols-5 gap-2">
             {fields.map((n) => {
               const fieldName = `f${n}_${device}_f`;
               const reg = register(fieldName);
+              const val = watch(fieldName);
+              const isEmpty = val === '' || val == null || Number.isNaN(val as any);
+              const hasFieldErr = f_error && isEmpty;
               return (
                 <div key={fieldName} className="flex flex-col space-y-1">
                   <label className="text-sm font-medium text-slate-700">F{n}</label>
@@ -147,21 +152,25 @@ const ReadingGrid = ({ device, title, register, handleKeyDown }: any) => {
                     onBlur={reg.onBlur}
                     onKeyDown={handleKeyDown}
                     ref={reg.ref}
-                    className="px-3 py-2 border rounded-xl text-slate-900 bg-white focus:outline-none focus:ring-2 border-slate-300 focus:ring-blue-500 focus:border-blue-500"
+                    className={`px-3 py-2 border rounded-xl text-slate-900 bg-white focus:outline-none focus:ring-2 ${hasFieldErr ? 'border-red-500 ring-1 ring-red-500 focus:ring-red-500' : 'border-slate-300 focus:ring-blue-500'}`}
                   />
                 </div>
               );
             })}
           </div>
+          {f_error && <p className="text-sm text-red-600 mt-2">{f_error}</p>}
         </div>
 
         {/* Sternum Section */}
-        <div className="space-y-4">
+        <div className={`space-y-4 p-3 rounded-lg border ${s_error ? 'border-red-500' : 'border-transparent'}`}>
           <h4 className="font-semibold text-slate-700 border-b pb-2">Sternum</h4>
           <div className="grid grid-cols-5 gap-2">
             {fields.map((n) => {
               const fieldName = `f${n}_${device}_s`;
               const reg = register(fieldName);
+              const val = watch(fieldName);
+              const isEmpty = val === '' || val == null || Number.isNaN(val as any);
+              const hasFieldErr = s_error && isEmpty;
               return (
                 <div key={fieldName} className="flex flex-col space-y-1">
                   <label className="text-sm font-medium text-slate-700">F{n}</label>
@@ -173,12 +182,13 @@ const ReadingGrid = ({ device, title, register, handleKeyDown }: any) => {
                     onBlur={reg.onBlur}
                     onKeyDown={handleKeyDown}
                     ref={reg.ref}
-                    className="px-3 py-2 border rounded-xl text-slate-900 bg-white focus:outline-none focus:ring-2 border-slate-300 focus:ring-blue-500 focus:border-blue-500"
+                    className={`px-3 py-2 border rounded-xl text-slate-900 bg-white focus:outline-none focus:ring-2 ${hasFieldErr ? 'border-red-500 ring-1 ring-red-500 focus:ring-red-500' : 'border-slate-300 focus:ring-blue-500'}`}
                   />
                 </div>
               );
             })}
           </div>
+          {s_error && <p className="text-sm text-red-600 mt-2">{s_error}</p>}
         </div>
       </div>
     </div>
@@ -186,7 +196,7 @@ const ReadingGrid = ({ device, title, register, handleKeyDown }: any) => {
 };
 
 const SampleForm: React.FC<SampleFormProps> = ({ onSubmit, onCancel, isLoading, initialValues, submitLabel = "Save Sample" }) => {
-  const { register, handleSubmit, formState: { errors } } = useForm<SampleFormValues>({
+  const { register, handleSubmit, watch, formState: { errors } } = useForm<SampleFormValues>({
     resolver: zodResolver(sampleSchema),
     defaultValues: initialValues,
   });
@@ -221,16 +231,17 @@ const SampleForm: React.FC<SampleFormProps> = ({ onSubmit, onCancel, isLoading, 
       />
 
       {/* Machine 1: MBJ20 */}
-      <div className="p-4 bg-blue-50/50 border border-blue-100 rounded-xl space-y-4">
+      <div className={`p-4 bg-blue-50/50 border rounded-xl space-y-4 ${errors.mbj20_f ? 'border-red-500' : 'border-blue-100'}`}>
         <h3 className="text-lg font-bold text-blue-900">Machine 1: MBJ20</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Input label="Forehead" type="number" step="any" onKeyDown={handleKeyDown} {...register('mbj20_f')} error={errors.mbj20_f?.message as string} />
-          <Input label="Sternum" type="number" step="any" onKeyDown={handleKeyDown} {...register('mbj20_s')} error={errors.mbj20_s?.message as string} />
+          <Input label="Forehead" type="number" step="any" onKeyDown={handleKeyDown} {...register('mbj20_f')} />
+          <Input label="Sternum" type="number" step="any" onKeyDown={handleKeyDown} {...register('mbj20_s')} />
         </div>
+        {errors.mbj20_f && <p className="text-sm text-red-600 mt-2">{errors.mbj20_f.message as string}</p>}
       </div>
 
       {/* Machine 2: JM103 */}
-      <div className="p-4 bg-emerald-50/50 border border-emerald-100 rounded-xl space-y-4">
+      <div className={`p-4 bg-emerald-50/50 border rounded-xl space-y-4 ${errors.mbj20_f ? 'border-red-500' : 'border-emerald-100'}`}>
         <h3 className="text-lg font-bold text-emerald-900">Machine 2: JM103</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Input label="Sternum" type="number" step="any" onKeyDown={handleKeyDown} {...register('jm103_s')} error={errors.jm103_s?.message as string} />
@@ -238,7 +249,7 @@ const SampleForm: React.FC<SampleFormProps> = ({ onSubmit, onCancel, isLoading, 
       </div>
 
       {/* Machine 3: TSB */}
-      <div className="p-4 bg-purple-50/50 border border-purple-100 rounded-xl space-y-4">
+      <div className={`p-4 bg-purple-50/50 border rounded-xl space-y-4 ${errors.mbj20_f ? 'border-red-500' : 'border-purple-100'}`}>
         <h3 className="text-lg font-bold text-purple-900">Machine 3: TSB</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Input label="TSB Reading" type="number" step="any" onKeyDown={handleKeyDown} {...register('tsb')} error={errors.tsb?.message as string} />
@@ -246,15 +257,15 @@ const SampleForm: React.FC<SampleFormProps> = ({ onSubmit, onCancel, isLoading, 
       </div>
 
       {/* Machine 4: D4 */}
-      <ReadingGrid device="d4" title="Machine 4: D4" register={register} handleKeyDown={handleKeyDown} errors={errors} />
+      <ReadingGrid device="d4" title="Machine 4: D4" register={register} watch={watch} handleKeyDown={handleKeyDown} errors={errors} />
       
       {/* Machine 5: D6 */}
-      <ReadingGrid device="d6" title="Machine 5: D6" register={register} handleKeyDown={handleKeyDown} errors={errors} />
+      <ReadingGrid device="d6" title="Machine 5: D6" register={register} watch={watch} handleKeyDown={handleKeyDown} errors={errors} />
 
       <Input label="Remarks" type="text" placeholder="Optional notes" onKeyDown={handleKeyDown} {...register('remarks')} error={errors.remarks?.message as string} />
 
       {/* Display validation errors */}
-      {(errors.weight || errors.day || Object.keys(errors).some(k => ['f1_d4_f', 'f1_d4_s', 'f1_d6_f', 'f1_d6_s', 'mbj20_f'].includes(k))) && (
+      {(errors.weight || errors.day) && (
         <div className="space-y-2 p-3 bg-red-50 border border-red-200 rounded-lg">
           {errors.weight && (
             <p className="text-xs text-red-700">{errors.weight.message as string}</p>
@@ -262,11 +273,6 @@ const SampleForm: React.FC<SampleFormProps> = ({ onSubmit, onCancel, isLoading, 
           {errors.day && (
             <p className="text-xs text-red-700">{errors.day.message as string}</p>
           )}
-
-          {/* Custom validation errors from superRefine */}
-          {Object.entries(errors).filter(([key]) => ['f1_d4_f', 'f1_d4_s', 'f1_d6_f', 'f1_d6_s', 'mbj20_f'].includes(key)).map(([key, error]: [string, any]) => (
-            error?.message && <p key={key} className="text-xs text-red-700">{error.message}</p>
-          ))}
         </div>
       )}
 

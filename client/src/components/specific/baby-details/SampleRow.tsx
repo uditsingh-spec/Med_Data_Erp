@@ -14,6 +14,26 @@ const SampleRow: React.FC<SampleRowProps> = memo(({ sample, babyId, userRole }) 
   const [showEditModal, setShowEditModal] = React.useState(false);
   const [isExpanded, setIsExpanded] = React.useState(false);
 
+  React.useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const editId = params.get('editSampleId');
+    if (editId === sample._id && userRole === 'admin') {
+      setShowEditModal(true);
+      // Remove it from URL so it doesn't re-open on refresh
+      const newUrl = window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+      
+      // Auto expand row as well
+      setIsExpanded(true);
+      
+      // Scroll into view
+      setTimeout(() => {
+        const el = document.getElementById(`sample-row-${sample._id}`);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    }
+  }, [sample._id, userRole]);
+
   const renderReadings = () => (
     <div className="col-span-full bg-slate-50 p-4 mt-2 mb-4 mx-4 rounded-xl grid grid-cols-1 md:grid-cols-3 gap-6 shadow-inner border border-slate-200">
       {/* MBJ20 */}
@@ -70,7 +90,7 @@ const SampleRow: React.FC<SampleRowProps> = memo(({ sample, babyId, userRole }) 
   );
 
   return (
-    <div className="border-b border-slate-100 transition-colors">
+    <div id={`sample-row-${sample._id}`} className="border-b border-slate-100 transition-colors">
       {/* Desktop Row */}
       <div 
         className="hidden md:grid gap-4 p-4 items-center cursor-pointer hover:bg-slate-50"

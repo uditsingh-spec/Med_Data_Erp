@@ -10,8 +10,10 @@ export const getAllObservations = async (req: Request, res: Response, next: Next
       .sort({ createdAt: -1 })
       .lean();
 
+    const validObservations = observations.filter(obs => obs.babyId != null);
+
     // Map to flatten baby data for the table
-    const formatted = observations.map(obs => ({
+    const formatted = validObservations.map(obs => ({
       ...obs,
       babyId: undefined, // omit original ref
       actualBabyId: (obs.babyId as any)?._id,

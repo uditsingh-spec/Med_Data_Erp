@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
-import { Download } from 'lucide-react';
+import { Download, Edit2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { downloadCSV } from '../../utils/exportUtils';
 
 interface Observation {
@@ -24,6 +25,7 @@ interface Observation {
     employeeId: string;
   };
   recordedAt: string;
+  sampleId?: any;
 }
 
 interface GlobalObservationTableProps {
@@ -33,6 +35,7 @@ interface GlobalObservationTableProps {
 }
 
 const GlobalObservationTable: React.FC<GlobalObservationTableProps> = memo(({ observations, searchQuery = '', dateQuery = '' }) => {
+  const navigate = useNavigate();
   const filteredObservations = React.useMemo(() => {
     const filtered = observations.filter(obs => {
       if (searchQuery && !obs.displayId?.toLowerCase().includes(searchQuery.toLowerCase())) {
@@ -275,7 +278,21 @@ const GlobalObservationTable: React.FC<GlobalObservationTableProps> = memo(({ ob
                             <>
                               <td rowSpan={4} className="thick-border-bottom font-bold text-[13px]" title={nameStr}>{nameStr}</td>
                               <td rowSpan={4} className="thick-border-bottom">{formattedDate}</td>
-                              <td rowSpan={4} className="thick-border-bottom">{dayDisplay}</td>
+                              <td rowSpan={4} className="thick-border-bottom">
+                                <div className="flex items-center justify-center space-x-2">
+                                  <span>{dayDisplay}</span>
+                                  <button 
+                                    onClick={() => {
+                                      const sId = typeof obs.sampleId === 'object' ? obs.sampleId?._id : obs.sampleId;
+                                      navigate(`/babies/${obs.actualBabyId}?editSampleId=${sId}`);
+                                    }}
+                                    title="Go to Baby Details to edit sample"
+                                    className="text-indigo-600 hover:text-indigo-800 p-1 hover:bg-indigo-50 rounded-full transition-colors"
+                                  >
+                                    <Edit2 className="w-3.5 h-3.5" />
+                                  </button>
+                                </div>
+                              </td>
                               <td rowSpan={4} className="thick-border-bottom">{obsWeightStr}</td>
                             </>
                           )}
