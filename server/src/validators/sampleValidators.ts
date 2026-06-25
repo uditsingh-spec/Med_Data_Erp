@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const createSampleSchema = z.object({
-  weight: z.preprocess((val) => val === '' || val === null || val === undefined ? undefined : Number(val), z.number({ message: "Weight is required" }).min(500, 'Weight must be at least 500g').max(5000, 'Weight cannot exceed 5000g')),
+  weight: z.preprocess((val) => val === '' || val === null || val === undefined ? undefined : Number(val), z.number().min(500, 'Weight must be at least 500g').max(5000, 'Weight cannot exceed 5000g')).optional(),
   day: z.preprocess((val) => val === '' || val === null || val === undefined ? undefined : Number(val), z.number().min(1, 'Day must be at least 1').optional()),
   shift: z.enum(['M', 'E']).optional(),
   mbj20_f: z.preprocess((val) => val === '' || val === null || val === undefined ? undefined : Number(val), z.number().optional()),

@@ -6,7 +6,7 @@ export interface IBaby extends Document {
   motherImage?: string;
   motherAge: number;
   gender: 'Male' | 'Female';
-  weight: number;
+  weight?: number;
   gestationalAge: string;
   termStatus: 'Term' | 'Preterm';
   skinForehead?: number;
@@ -27,7 +27,7 @@ const babySchema = new Schema<IBaby>(
     motherImage: { type: String },
     motherAge: { type: Number, required: true },
     gender: { type: String, enum: ['Male', 'Female'], required: true },
-    weight: { type: Number, required: true },
+    weight: { type: Number },
     gestationalAge: { type: String, required: true },
     termStatus: { type: String, enum: ['Term', 'Preterm'], required: true, default: 'Term' },
     skinForehead: { type: Number, min: 1 },

@@ -11,7 +11,7 @@ router.route('/')
 
 router.route('/:id')
   .get(authMiddleware, getBabyById)
-  .put(authMiddleware, adminMiddleware, updateBaby)
+  .put(authMiddleware, adminMiddleware, upload.single('motherImage'), updateBaby)
   .delete(authMiddleware, adminMiddleware, deleteBaby);
 
 router.route('/:id/samples')

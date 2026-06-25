@@ -27,9 +27,9 @@ export const babySchema = z.object({
   skinSternumB: z.preprocess((val) => val === undefined || val === '' || val === null ? undefined : Number(val), z.number().int().min(1)).optional(),
 }).refine(data => {
   if (data.isTwin) {
-    return data.weightA !== undefined && data.genderA && data.weightB !== undefined && data.genderB && data.gestationalAge;
+    return data.genderA && data.genderB && data.gestationalAge;
   } else {
-    return data.weight !== undefined && data.gender && data.gestationalAge;
+    return data.gender && data.gestationalAge;
   }
 }, { message: "Missing required fields for single or twin selection" });
 

@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+build/
+.expo/
+.DS_Store
+*.log
+scratch.ts
+server/scratch/

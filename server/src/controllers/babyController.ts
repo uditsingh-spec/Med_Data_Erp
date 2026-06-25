@@ -39,7 +39,7 @@ export const createBaby = async (req: Request, res: Response, next: NextFunction
     }
 
     if (validatedData.isTwin) {
-      if (!validatedData.weightA || !validatedData.genderA || !validatedData.weightB || !validatedData.genderB || !validatedData.gestationalAge) {
+      if (!validatedData.genderA || !validatedData.genderB || !validatedData.gestationalAge) {
         res.status(400).json({ message: 'Missing required twin fields' });
         return;
       }
@@ -102,7 +102,7 @@ export const createBaby = async (req: Request, res: Response, next: NextFunction
 
       res.status(201).json([babyA, babyB]);
     } else {
-      if (!validatedData.weight || !validatedData.gender || !validatedData.gestationalAge) {
+      if (!validatedData.gender || !validatedData.gestationalAge) {
         res.status(400).json({ message: 'Missing required fields for single baby' });
         return;
       }
@@ -360,12 +360,23 @@ export const updateBaby = async (req: Request, res: Response, next: NextFunction
     if (validatedData.skinForehead !== undefined) baby.skinForehead = validatedData.skinForehead;
     if (validatedData.skinSternum !== undefined) baby.skinSternum = validatedData.skinSternum;
 
+    if (req.file) {
+      try {
+        const motherImageUrl = await uploadImage(req.file.buffer, req.file.mimetype);
+        baby.motherImage = motherImageUrl;
+      } catch (uploadError) {
+        res.status(400).json({ message: 'Image upload failed. Please check your Cloudinary credentials or network connection.' });
+        return;
+      }
+    }
+
     // Recalculate displayId
     let newDisplayId = await generateDisplayId(
       baby.motherName,
-      baby.weight!,
+      baby.weight,
       baby.gender!,
-      baby.gestationalAge!
+      baby.gestationalAge!,
+      baby._id.toString()
     );
 
     if (baby.isTwin && baby.twinLabel) {

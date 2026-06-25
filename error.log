@@ -238,3 +238,382 @@
     at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async updateSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\sampleController.ts:28:20)
+2026-06-23T08:08:30.819Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:08:30.827Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T08:08:31.837Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:08:31.841Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T08:08:53.623Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:08:53.628Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T08:08:54.636Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:08:54.642Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T08:14:12.869Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:14:12.874Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T08:14:13.883Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Baby"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabyById (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:201:18)
+2026-06-23T08:14:13.885Z Error name: CastError | Error message: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample" | Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "babyId" for model "Sample"
+    at SchemaObjectId.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._find (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:2438:8)
+    at maybeTracedQueryExec (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getBabySamples (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:306:21)
+2026-06-23T13:54:02.594Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:04.605Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:07.856Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:11.986Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:13.163Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:24.376Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-23T13:54:25.767Z Error name: Error | Error message: Not Found - /api | Stack: Error: Not Found - /api
+    at notFound (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\errorMiddleware.ts:5:17)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:291:5)
+    at cookieParser (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\index.js:297:9
+2026-06-24T06:29:31.692Z Error name: ZodError | Error message: [
+  {
+    "origin": "number",
+    "code": "too_big",
+    "maximum": 5000,
+    "inclusive": true,
+    "path": [
+      "weight"
+    ],
+    "message": "Too big: expected number to be <=5000"
+  }
+] | Stack: ZodError: [
+  {
+    "origin": "number",
+    "code": "too_big",
+    "maximum": 5000,
+    "inclusive": true,
+    "path": [
+      "weight"
+    ],
+    "message": "Too big: expected number to be <=5000"
+  }
+]
+    at createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:29:38)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at multerMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\multer\lib\make-middleware.js:18:41)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-24T08:06:12.970Z Error name: ZodError | Error message: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at updateBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:344:44)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at adminMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:61:5)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-24T08:06:16.125Z Error name: ZodError | Error message: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at updateBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:344:44)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at adminMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:61:5)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-24T08:07:19.906Z Error name: ZodError | Error message: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at updateBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:344:44)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at adminMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:61:5)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-25T06:16:15.804Z Error name: MongoServerError | Error message: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" } | Stack: MongoServerError: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" }
+    at InsertOneOperation.handleOk (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\insert.ts:79:13)
+    at executeOperationWithRetries (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:267:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:127:12)
+    at async Collection.insertOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\collection.ts:294:12)
+    at async model.$__save (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:433:16)
+    at async maybeTracedSave (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:674:7)
+    at async Function.create (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:2762:5)
+    at async createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:69:21)
+2026-06-25T06:17:58.636Z Error name: MongoServerError | Error message: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" } | Stack: MongoServerError: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" }
+    at InsertOneOperation.handleOk (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\insert.ts:79:13)
+    at executeOperationWithRetries (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:267:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:127:12)
+    at async Collection.insertOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\collection.ts:294:12)
+    at async model.$__save (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:433:16)
+    at async maybeTracedSave (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:674:7)
+    at async Function.create (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:2762:5)
+    at async createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:69:21)
+2026-06-25T06:26:35.681Z Error name: MongoServerError | Error message: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" } | Stack: MongoServerError: E11000 duplicate key error collection: newborn-erp.babies index: displayId_1 dup key: { displayId: "GARIMA-3900-M38W-T1" }
+    at InsertOneOperation.handleOk (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\insert.ts:79:13)
+    at executeOperationWithRetries (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:267:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\operations\execute_operation.ts:127:12)
+    at async Collection.insertOne (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongodb\src\collection.ts:294:12)
+    at async model.$__save (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:433:16)
+    at async maybeTracedSave (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:674:7)
+    at async Function.create (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\mongoose\lib\model.js:2762:5)
+    at async createBaby (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:69:21)
+2026-06-25T06:34:00.738Z Error name: ZodError | Error message: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:239:46)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-25T06:38:30.822Z Error name: ZodError | Error message: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] | Stack: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at createSample (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\controllers\babyController.ts:239:46)
+    at Layer.handleRequest (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\node_modules\router\lib\route.js:157:13)
+    at authMiddleware (C:\Users\Lenovo\.vscode\Med_Data_Erp\server\src\middlewares\authMiddleware.ts:48:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
